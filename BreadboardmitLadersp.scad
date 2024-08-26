@@ -1,0 +1,52 @@
+//MIT-Lizence
+$fn=100;
+module breadboardrahmen(){
+difference(){
+    hull(){
+    translate([-85/2,-56/2,0])cylinder(r=2,h=11);
+    translate([85/2,-56/2,0])cylinder(r=2,h=11);
+    translate([-85/2,56/2,0])cylinder(r=2,h=11);
+    translate([85/2,56/2,0])cylinder(r=2,h=11);
+    };
+    translate([-85/2,-56/2,1.4])cube([85,56,11]);
+};
+};
+module schalter(){
+difference(){
+    union(){
+    translate([90,0,0])cube([15,22,11]);
+   hull(){
+       translate([103,3,12])rotate([0,90,0])cylinder(r=3,h=2);
+       translate([103,19,12])rotate([0,90,0])cylinder(r=3,h=2);
+   };
+    };
+    translate([83,2,1.5])cube([20,18,15]);
+    translate([100,11,10])rotate([0,90,0])cylinder(d=6.5,h=10,$fn=50);
+};
+};
+module batteriehalter(){
+    difference(){
+    hull(){
+        translate([-58/2,-17/2,0])cylinder(r=2,h=11);
+        translate([58/2,-17/2,0])cylinder(r=2,h=11);
+        translate([-58/2,17/2,0])cylinder(r=2,h=11);
+        translate([58/2,17/2,0])cylinder(r=2,h=11);
+    };
+    translate([-58/2,-17/2,1.4])cube([58,17,11]);
+};
+};
+
+translate([-85/2,-85,0])rotate([0,0,90])schalter();
+breadboardrahmen();
+translate([0,-35,0])hull(){
+    translate([-85/2,0,0])cylinder(r=1,h=11);
+    translate([85/2,0,0])cylinder(r=1,h=11);
+};  
+hull(){
+    translate([87/2,-35,0])cylinder(r=1,h=11);
+    translate([87/2,-30,0])cylinder(r=1,h=11);
+};
+translate([-85/2,-35,0])cube([85,5,2]);
+translate([-85/2,-35,9])cube([70,5,2]);
+rotate([0,0,90])translate([0,73,0])batteriehalter();
+translate([-63,-31,0])cube([20,61,2]);
