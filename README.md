@@ -5,3 +5,4 @@ The holder for the circuit was created with OpenSCAD.
 The source file and STI file are part of the project.
 I give no guarantee that the project will work.
 ![Bild vom Projekt](Komplett.jpg)
+I created another version for the larger 18650 cell.
