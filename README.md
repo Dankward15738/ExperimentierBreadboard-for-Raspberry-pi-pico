@@ -6,3 +6,5 @@ The source file and STI file are part of the project.
 I give no guarantee that the project will work.
 ![Bild vom Projekt](Komplett.jpg)
 I created another version for the larger 18650 cell.
+![18650](18650Modell.jpg)
+The bottom line shows the charge level of the battery. It is connected to ADC(3), this AD converter is internally connected to the VSYS.
