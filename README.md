@@ -4,4 +4,4 @@ https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf on page 22. You need 
 The holder for the circuit was created with OpenSCAD.
 The source file and STI file are part of the project.
 Ich gebe keine Garantie auf die Funktionfähigkeit des Projektes.
-![Bild vom Projekt](https://github.com/Dankward15738/ExperimentierBreadboard-for-Raspberry-pi-pico/Komplett.jpg)
+![Bild vom Projekt](Komplett.jpg)
